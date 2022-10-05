@@ -13,6 +13,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="title.js">
   <title>Healer</title>
   <style>
     hr {
@@ -39,6 +40,9 @@
       }
       .a{
         font-size: 30px;
+        text-decoration: none;
+        color: rgb(82, 6, 63);
+        
       }
       .dark-mode {
         background-color: black;
@@ -48,34 +52,249 @@
       .size{
         font-size: 30px;
       }
+      
+      .image{
+        /* size: 30px; */
+        position: absolute;
+        left: 10px;
+        top: -15px;
+      }
+      .nnb {
+        /* display: flex;
+        justify-content: space-around; */
+        position: absolute;
+        left: 750px;
+        top: 30px;
+      }
+      .logo{
+        position: absolute;
+        left: 675px;
+        top: 7px;
+      }
+      
+      @-webkit-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@-moz-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.wow {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+
+/** fadeInLeft **/
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.wow1 {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-duration:1s;
+    animation-delay: 1s;
+}
+
+.wow2 {
+  /* color: #fff; */
+  animation: fadeInRight 4s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
+
+
   </style>
   <script>
       function darkMode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
+      
   </script>
 </head>
 
 <body>
-  <header class="text-gray-600 body-font nav bg1">
+  <header class="ab">
     <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
-      <img src="Blue & Red Two Hearts Logo.png" height="15%" width="15%" alt="Healer">
+      <div class="image"><img src="Healer Logo.png" height="150px" width="150px" alt="Healer"></div>
 
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <div class="nnb">
+        <!-- <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"> -->
         <a class="mr-5 hover:text-gray-900 a" href="#covid">COVID-19</a>
         <a class="mr-5 hover:text-gray-900 a" href="#covid">Vaccination</a>
         <a class="mr-5 hover:text-gray-900 a" href="#questions">Frequent question</a>
-=      </nav>
-      <button type="button" class="btn btn-dark" onclick="darkMode()">🌒</button>
+      </nav>
+      <div class="logo"><button type="button" class="btn btn-dark" onclick="darkMode()">🌒</button>
     </div>
+  </div>
+  <!-- </div> -->
   </header>
   
 <!--  This was a group project  -->
   <!-- main body -->
   <section class="text-gray-600 body-font ">
     <div class="container px-5 py-24 mx-auto">
-      <div class="text-center mb-20">
+      <div class="text-center mb-20 wow1">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-red-900 mb-4">What is Healer :</h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s size">At healer, you will get everything
           one needs to know about COVID-19, from
@@ -94,7 +313,8 @@
               <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
           </div>
-          <div class="flex-grow">
+
+          <div class="flex-grow wow2">
             <h2 class="text-red-900 text-lg title-font font-medium mb-3 size">COVID- 19</h2>
             <p class="leading-relaxed text-base ">STATS <br> LATEST UPDATES <br> PRECAUTIONS</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center" href="stats.html" target="blank">Know More
@@ -115,7 +335,7 @@
               <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
             </svg>
           </div>
-          <div class="flex-grow">
+          <div class="flex-grow wow2">
             <h2 class="text-red-900 text-lg title-font font-medium mb-3 size">Vaccination</h2>
             <p class="leading-relaxed text-base">IMPORTANCE <br> AVILABILITY <br> PRECAUTION</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center" href="Vaccination.html" target="blank">Get
@@ -136,9 +356,9 @@
   <!--section accordion-->
   <section id="questions" class="p-5">
     <div class="sectio p-5" id="questions">
-      <div class="container">
+      <div class="container  animated animatedFadeInUp fadeInUp">
         <h2 class="text-center mb-4">Frequenty asked question</h2>
-        <!--question4-->
+        <!--question1-->
         <div class="accordion accordion-flush" id="questions">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -148,7 +368,7 @@
               </button>
             </h2>
             <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
+              <div class="accordion-body wow1">
                 In December 2019, a novel coronavirus called SARS-CoV-2 has resulted in the outbreak of a respiratory
                 illness known as COVID-19. Karger Publishers supports research in this area by providing free access to
                 relevant articles (listed below) and works with international organisations to support the sharing of
@@ -163,7 +383,7 @@
             </div>
           </div>
         </div>
-        <!--question3-->
+        <!--question2-->
         <div class="accordion accordion-flush" id="questions">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -173,7 +393,7 @@
               </button>
             </h2>
             <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
+              <div class="accordion-body wow1">
                 COVID 19-vaccines are effective (<a
                   href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/effectiveness/index.html"
                   target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/vaccines/effectiveness/index.html</a> can
@@ -186,6 +406,73 @@
             </div>
           </div>
         </div>
+        <!--question3-->
+        <div class="accordion accordion-flush" id="questions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-three">
+                What is the death %age ratio ?
+              </button>
+            </h2>
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body wow1">
+                The data available to date suggest a mean death rate of 2.8% for India, which includes 86% comorbidity
+                cases. Many of the states are performing well except those states such as West Bengal and Gujarat, where
+                death rates are closer to the USA i.e. >5%. In fact, the recovery rate for India has increased from 7.6
+                to
+                32% in a month
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--question4-->
+        <div class="accordion accordion-flush" id="questions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-four">
+                Which Vaccine is the best ?
+              </button>
+            </h2>
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body wow1">
+                The effect of every vaccine may vary person to person but as the record states , Covaxin has 77.8%
+                efficacy against symptomatic COVID-19 disease. The vaccine's efficacy against severe symptomatic
+                COVID-19
+                disease is 93.4%. "The efficacy data demonstrates 63.6% protection against asymptomatic COVID-19," the
+                manufacturer says.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--question5-->
+        <div class="accordion accordion-flush" id="questions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-five">
+                How to cope up, if I have been tested +ve ?
+              </button>
+            </h2>
+            <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body wow1">
+                If you test positive for COVID-19 and have one or more health conditions (<a
+                  href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html"
+                  target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html</a>)that
+                increase your risk of becoming very sick, treatment may be available (<a
+                  href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html"
+                  target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html</a>
+                ). Contact a health professional right away after a positive test to determine if you may be eligible,
+                even if your symptoms are mild right now. Don't delay: Treatment must be started within the first few
+                days
+                to be effective
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- e -->
         <!--question3-->
         <div class="accordion accordion-flush" id="questions">
           <div class="accordion-item">
@@ -244,7 +531,7 @@
                   href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html"
                   target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html</a>
                 ). Contact a health professional right away after a positive test to determine if you may be eligible,
-                even if your symptoms are mild right now. Don’t delay: Treatment must be started within the first few
+                even if your symptoms are mild right now. Don't delay: Treatment must be started within the first few
                 days
                 to be effective
               </div>
